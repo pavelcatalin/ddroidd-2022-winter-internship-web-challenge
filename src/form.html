@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</script>
+</head>
+<body>
+
+    <!--header section starts-->
+
+    <header>
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="./index.html"><img src="./assets/img/ddroidd_logo.svg"></a>
+                </div>
+                <div class="main-title">
+                  <h1>Winter Internship</h1>
+                </div>
+                <div class="hearder-join-btn"></div>
+            </div>     
+    </header>
+      
+    <!--header section ends-->
+
+    <!--form section starts-->
+
+     <section class="form">
+        <div class="container">
+            <h2>Application Form</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" >
+                <div class="name-inputs">
+                    <div class="first-name">
+                        <label for="first-name">First Name: <span class="required">*</span></label>
+                        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name<span class="required">*</span></label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                    </div>   
+                </div>
+                <h3>Address</h3>
+                <div class="address-inputs">
+                    <div class="first-address address">
+                        <label for="first-address">Adress Line 1:<span class="required">*</span></label>
+                        <input type="text" name="first-adress" id="first-adress" placeholder="Street name & number">
+                    </div>
+                    <div class="second-address address">
+                        <label for="second-address">Adress Line 2:</label>
+                        <input type="text" name="second-address" id="second-address" placeholder="Suite, apartment">
+                    </div>
+                    <div class="details-address">
+                        <div class="city">
+                            <label for="city">City:<span class="required">*</span></label>
+                            <input type="text" name="city" id="city" placeholder="City">
+                        </div>
+                        <div class="state">
+                            <label for="state">State:<span class="required">*</span></label>
+                            <input type="text" name="state" id="state" placeholder="State">
+                        </div>
+                        <div class="zip-code">
+                            <label for="zip-code">Zip Code:<span class="required">*</span></label>
+                        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code">
+                        </div>
+                    </div>
+                </div>
+                <h3>Contact Information</h3>
+                <div class="contact-inputs">
+                    <div class="phone">
+                        <label for="phone">Phone number:<span class="required">*</span></label>
+                        <input type="tel" name="phone" id="phone" placeholder="555-5555">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email address:<span class="required">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="john@doe.com">
+                    </div>
+                </div>
+                <div class="submit-func">
+                    <div class="captcha">
+                        <div class="g-recaptcha" 
+                            data-sitekey="6LfM78EdAAAAAMdKhWTga-rscCDwIJntI2hq_Wqc"
+                            data-callback="captchaCallback"></div>
+                    </div>
+                    <div class="submit-btn-container">
+                        <button class="submit-btn disabled" type="submit" disabled >Join Us</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+     </section>
+
+    <!--form section ends-->
+
+    <!--home section ends-->
+
+    <footer>
+        <p>Come to the dark side... we have <i class="fas fa-cookie"></i></p>
+    </footer>
+  
+      <!--home section ends-->
+     <script src="index.js"></script> 
+     
+      
+</body>
+</html>

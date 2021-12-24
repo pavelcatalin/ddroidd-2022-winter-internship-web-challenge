@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background-color: $dove-gray;
+    color: $white;
+    & p{
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+   footer p{
+       font-size: 5vw;
+   } 
+}

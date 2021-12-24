@@ -1,0 +1,153 @@
+
+
+.form .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 76vh;
+    width: 70%;
+    margin: 0 auto;
+    background-color: $athens-gray ;
+  
+      & h2{
+        text-align: center;
+        margin: 5rem ;
+        font-size: 2rem;
+        letter-spacing: -2px;
+        color: $prussian-blue;
+        font-family: $font-family-bold;
+        }
+  
+      & form {
+        height: 100%;
+        width: 60%;
+        margin: 0 auto;
+        /*Global form styles*/
+  
+          input{
+            border: none;
+            box-shadow: -2px 5px 5px grey;
+            height: 1.3rem;
+            margin-bottom: 0.8rem;
+            outline: none;
+            
+              &::placeholder{
+                padding-left: 0.4rem;
+                font-family:$font-family-medium ;
+                opacity: 0.6;
+              }            
+          }
+  
+          label{
+            display: block;
+            color:$prussian-blue ;
+            font-family: $font-family-bold;
+            padding-bottom: 0.3rem;
+            font-size: 0.9rem;
+            letter-spacing: -1px;
+          }
+          h3{
+            color:$prussian-blue ;
+            font-family: $font-family-bold;
+          }
+          .required{
+            color: red;
+            font-weight: bold;
+          }
+          /*Global form styles ends*/
+  
+          .name-inputs{
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+              .first-name, .last-name{
+                flex: 1;
+              }
+              .first-name{
+                margin-right: 2rem;
+              }
+              input{
+                width: 100%;
+              }
+          }
+  
+          .address-inputs .address input{
+            width: 100%;
+          }
+  
+          .details-address {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+          
+          .contact-inputs{
+            display: flex;
+  
+              .phone,.email{
+                flex:1;
+  
+                input{
+                  width: 100%;
+                }
+              }
+              .phone{
+                margin-right: 1.5rem;
+              }
+  
+          }
+          .submit-func{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+          }
+          .submit-btn-container{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .captcha{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0 2rem;
+          }
+          .submit-btn{
+            width: 250px;
+            height: 30px;
+            background-color: $school-bus-yellow;
+            color: $prussian-blue;
+            font-family: $font-family-bold;
+            border: 1px solid grey;
+            align-self: flex-end;
+            box-shadow: -2px 7px 10px grey;
+            font-size: 1rem;
+            margin: 2rem 0 2rem 0;
+            cursor: pointer;
+          }
+          
+          .disabled{
+            opacity: 0.4;
+            cursor:not-allowed;
+          }
+          .g-recaptcha{
+            display: inline-block;
+          }
+        }
+    }
+
+    @media screen and (max-width:767px) {
+      .form .container{
+        width: 100%;
+        overflow-x: hidden;
+          & form{
+            width: 85%;
+            
+          }
+      }
+   }

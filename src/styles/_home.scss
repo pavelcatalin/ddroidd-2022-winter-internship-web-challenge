@@ -1,0 +1,40 @@
+.home .container{
+    position: relative;
+    display: flex;
+    height: 76vh;
+    width: 70%;
+    margin: 0 auto;
+    background-color: $athens-gray;
+    padding: 0 1rem;
+      & img:first-child{
+        width: 65%;
+      }
+      & img:nth-child(2){
+        width: 35%;
+      }
+      & button{
+        position: absolute;
+        bottom: 6rem;
+        right: 50%;
+        transform: translateX(50%);
+        width: 220px;
+        height: 30px;
+        background-color: $school-bus-yellow;
+        border: 1px solid grey;
+        box-shadow: -2px 7px 10px grey;
+        & a {
+            display: block;
+            width: 100%;
+            color: $prussian-blue;
+            font-size: 16px;
+            font-family: $font-family-bold;
+        }
+      }
+    }   
+  
+    
+    @media screen and (max-width:767px) {
+        .home .container button{
+            width: 20vw;
+        }
+     }

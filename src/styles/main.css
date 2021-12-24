@@ -1,0 +1,527 @@
+/* _-_-_- base/RESET -_-_-_ */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("../assets/fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../assets/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("../assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* _-_-_- base/RESET -_-_-_ */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+body {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+}
+
+header {
+  height: 12vh;
+  background-color: #003C55;
+}
+
+.header-wrapper {
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header-wrapper .logo,
+.header-wrapper .hearder-join-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-wrapper .main-title {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.header-wrapper img {
+  height: 12vh;
+  width: 100%;
+}
+
+.header-wrapper h1 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-family: "OpenSans-Medium";
+  letter-spacing: 2px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 4vw;
+}
+
+.header-wrapper .join {
+  width: 120px;
+  height: 30px;
+  background-color: #FFE000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: -2px 5px 7px black;
+          box-shadow: -2px 5px 7px black;
+  color: #003C55;
+  font-size: 16px;
+  font-family: "OpenSans-Bold";
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .header-wrapper {
+    width: 90%;
+  }
+  .header-wrapper h1 {
+    font-size: 5vw;
+  }
+  .header-wrapper .join {
+    width: 15vw;
+    height: 3.4vh;
+    font-size: 3vw;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12vh;
+  background-color: #707070;
+  color: #FFFFFF;
+}
+
+footer p {
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  footer p {
+    font-size: 5vw;
+  }
+}
+
+.form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 76vh;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #F4F5F8;
+}
+
+.form .container h2 {
+  text-align: center;
+  margin: 5rem;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  color: #003C55;
+  font-family: "OpenSans-Bold";
+}
+
+.form .container form {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  /*Global form styles*/
+  /*Global form styles ends*/
+}
+
+.form .container form input {
+  border: none;
+  -webkit-box-shadow: -2px 5px 5px grey;
+          box-shadow: -2px 5px 5px grey;
+  height: 1.3rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+}
+
+.form .container form input::-webkit-input-placeholder {
+  padding-left: 0.4rem;
+  font-family: "OpenSans-Medium";
+  opacity: 0.6;
+}
+
+.form .container form input:-ms-input-placeholder {
+  padding-left: 0.4rem;
+  font-family: "OpenSans-Medium";
+  opacity: 0.6;
+}
+
+.form .container form input::-ms-input-placeholder {
+  padding-left: 0.4rem;
+  font-family: "OpenSans-Medium";
+  opacity: 0.6;
+}
+
+.form .container form input::placeholder {
+  padding-left: 0.4rem;
+  font-family: "OpenSans-Medium";
+  opacity: 0.6;
+}
+
+.form .container form label {
+  display: block;
+  color: #003C55;
+  font-family: "OpenSans-Bold";
+  padding-bottom: 0.3rem;
+  font-size: 0.9rem;
+  letter-spacing: -1px;
+}
+
+.form .container form h3 {
+  color: #003C55;
+  font-family: "OpenSans-Bold";
+}
+
+.form .container form .required {
+  color: red;
+  font-weight: bold;
+}
+
+.form .container form .name-inputs {
+  width: 100%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form .container form .name-inputs .first-name, .form .container form .name-inputs .last-name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form .container form .name-inputs .first-name {
+  margin-right: 2rem;
+}
+
+.form .container form .name-inputs input {
+  width: 100%;
+}
+
+.form .container form .address-inputs .address input {
+  width: 100%;
+}
+
+.form .container form .details-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form .container form .contact-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .container form .contact-inputs .phone, .form .container form .contact-inputs .email {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form .container form .contact-inputs .phone input, .form .container form .contact-inputs .email input {
+  width: 100%;
+}
+
+.form .container form .contact-inputs .phone {
+  margin-right: 1.5rem;
+}
+
+.form .container form .submit-func {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.form .container form .submit-btn-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form .container form .captcha {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0 2rem;
+}
+
+.form .container form .submit-btn {
+  width: 250px;
+  height: 30px;
+  background-color: #FFE000;
+  color: #003C55;
+  font-family: "OpenSans-Bold";
+  border: 1px solid grey;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-shadow: -2px 7px 10px grey;
+          box-shadow: -2px 7px 10px grey;
+  font-size: 1rem;
+  margin: 2rem 0 2rem 0;
+  cursor: pointer;
+}
+
+.form .container form .disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.form .container form .g-recaptcha {
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .form .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .form .container form {
+    width: 85%;
+  }
+}
+
+.home .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 76vh;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #F4F5F8;
+  padding: 0 1rem;
+}
+
+.home .container img:first-child {
+  width: 65%;
+}
+
+.home .container img:nth-child(2) {
+  width: 35%;
+}
+
+.home .container button {
+  position: absolute;
+  bottom: 6rem;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 220px;
+  height: 30px;
+  background-color: #FFE000;
+  border: 1px solid grey;
+  -webkit-box-shadow: -2px 7px 10px grey;
+          box-shadow: -2px 7px 10px grey;
+}
+
+.home .container button a {
+  display: block;
+  width: 100%;
+  color: #003C55;
+  font-size: 16px;
+  font-family: "OpenSans-Bold";
+}
+
+@media screen and (max-width: 767px) {
+  .home .container button {
+    width: 20vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */
